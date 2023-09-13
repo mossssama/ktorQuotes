@@ -15,7 +15,7 @@ version = "0.0.1"
 
 tasks.withType<Jar> {
     manifest {
-        attributes["Main-Class"] = "com.newOs.Application"
+        attributes["Main-Class"] = "com.newOs.Application.kt"
     }
 }
 
