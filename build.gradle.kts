@@ -12,6 +12,14 @@ plugins {
 group = "com.newOs"
 version = "0.0.1"
 
+
+tasks.withType<Jar> {
+    manifest {
+        attributes["Main-Class"] = "com.example.MainKt"
+    }
+}
+
+
 application {
     mainClass.set("io.ktor.server.netty.EngineMain")
 
